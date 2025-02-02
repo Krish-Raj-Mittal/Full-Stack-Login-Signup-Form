@@ -20,7 +20,7 @@ const Signup = () => {
   async function submitHandler(e) {
     e.preventDefault()
     try {
-      await axios.post("http://localhost:4000/api/v1/signup", formData)
+      await axios.post("https://full-stack-login-signup-form-2.onrender.com/signup", formData)
       alert('User Signup')
     }
     catch (err) {
