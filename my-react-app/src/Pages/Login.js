@@ -24,7 +24,7 @@ const Login = () => {
         e.preventDefault();
 
         try{
-            await axios.post('https://full-stack-login-signup-form-3.onrender.com', formData)
+            await axios.post('https://full-stack-login-signup-form-3.onrender.com/api/v1/login', formData)
             alert('User Logged In');
         }
         catch(err){
